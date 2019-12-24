@@ -4,9 +4,4 @@ export class UserAccount {
   accountHolderPhoneNumber: string;
   accountNumber: BigInteger;
   accountDescription: string;
-
-
-
-
-
 }

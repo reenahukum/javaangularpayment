@@ -1,0 +1,34 @@
+<div class="container">
+
+  <div class="lead text-center">
+    <h1>Account List</h1>
+    <p class="lead mb-4">This is the list of account created all together</p>
+
+  </div>
+
+  <!-- No data message -->
+<!-- <p *ngIf="Employee.length <= 0" class="no-data text-center">There is no employee added yet!</p>  -->
+
+  <!-- Employee list -->
+  <table class="table table-bordered">
+    <thead class="table-success">
+      <tr>
+        <th scope="col">Account ID</th>
+        <th scope="col">AccountDescription</th>
+        <th scope="col">AccountHolderName</th>
+        <th scope="col">AccountHolderPhoneNumber</th>
+        <th scope="col">AccountNumber</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let account of Accounts; let i = index">
+        <th scope="row">{{account.id}}</th>
+        <td>{{account.accountDescription}}</td>
+        <td>{{account.accountHolderName}}</td>
+        <td>{{account.accountHolderPhoneNumber}}</td>
+        <td>{{account.accountNumber}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

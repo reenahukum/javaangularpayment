@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="lead text-center">
+    <h1 >Payment List</h1>
+    <p class="lead mb-4">This is the list of payment created all together</p>
+
+  </div>
+  <!-- No data message -->
+<!-- <p *ngIf="Employee.length <= 0" class="no-data text-center">There is no employee added yet!</p>  -->
+
+  <!-- Employee list -->
+  <table class="table table-bordered">
+    <thead class="table-success">
+      <tr>
+        <th scope="col">Employee ID</th>
+        <th scope="col">Amount</th>
+        <th scope="col">CurrenyCode</th>
+        <th scope="col">DestinationAccountNumber</th>
+        <th scope="col">Payment Description</th>
+        <th scope="col center">SourceAccountNumber</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of Employee; let i = index">
+        <th scope="row">{{employee.id}}</th>
+        <td>{{employee.amount}}</td>
+        <td>{{employee.currenyCode}}</td>
+        <td>{{employee.destinationAccountNumber}}</td>
+        <td>{{employee.paymentDescription}}</td>
+        <td>{{ employee.sourceAccountNumber  }}</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+

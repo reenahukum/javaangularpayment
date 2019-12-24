@@ -11,8 +11,10 @@
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
+        <li [routerLinkActive] = "['active']"  [routerLinkActiveOptions]="{exact:true}" ><a class="nav-link" [routerLink]="['/account-detail']">AccountList</a></li>
+        <li [routerLinkActive] = "['active']"  [routerLinkActiveOptions]="{exact:true}" ><a class="nav-link" [routerLink]="['/payment-detail']">PaymentList</a></li>
         <li   [routerLinkActive] = "['active']" [routerLinkActiveOptions]="{exact:true}" ><a class="nav-link" [routerLink]="['/login']">Login</a></li>
         <li [routerLinkActive] = "['active']"  [routerLinkActiveOptions]="{exact:true}" ><a class="nav-link" [routerLink]="['/register']">Register</a></li>
-      </ul>
+   </ul>
   </div>
 </nav>
